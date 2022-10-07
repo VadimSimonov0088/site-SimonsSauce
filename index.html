@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simons Sauce testing - копия</title>
+    <link rel="stylesheet" href="css/main.css"> 
+    
+
+</head>
+    <body>
+        
+
+        <div class="top-trade">
+            <img class="trademark" src="images/trademark.webp" alt="trademark">
+        </div> 
+
+        <div class="contaner-upper">
+            <header>
+
+                <img class="mobile-menu" src="images/menu.svg" alt="Open mobile-menu">
+
+                <nav>
+
+                    <img class="mobile-menu-exit" src="images/exit.svg" alt="Close mobile-menu-exit";>
+
+                    <ul class="navigation">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Cart Page</a></li>
+                    </ul>
+
+                </nav>
+            </header>
+        </div>
+        
+        <div class="top">
+            <img class="logoSS" src="images/logo.jpg" alt="logo">
+        </div> 
+
+            <input class="search-bar" type="text" placeholder="Search">
+      
+
+        <section class="hero">
+
+            <!-- <img class="hero-img" src="images/sauceshero.jpg" alt="Sauces hero"> -->
+            <!-- <div class="hero-img"></div> -->
+
+            <h1>"Sauces have never been so fresh"</h1>
+
+            <p class="hero-desc"><strong>Simon’s Sauce</strong> – Family-owned brand of natural & homemade sauces, was founded in Moscow, Russia.</p>
+
+            <p class="hero-desc">All tastes are unique. Recipes are taken from our family’s cookbook and inspired by traveling and visiting different countries and cuisines.
+                We use only fresh and natural ingredients without any preservatives and dyestuff.</p>
+
+            <p class="hero-desc"> We use only ingredients of plant origin. Herbs, nuts and everything for our sauces we sort out manually.
+                Simon’s Sauce is a Vegan-friendly.
+                We believe that our sauces can help people to have great and tasty meals every day, to be healthier and to live a longer life.
+            </p>    
+            
+
+            <h2>Enjoy your meal with Simon's Sauce!</h2>
+        </section>
+
+        <section class="about-sauces">
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Cranberry"</p>
+                    <p class="description">Suitable for traditional dishes of mutton, poultry, and duck.
+                        Can also be approached to pancakes. Its basis is fresh cranberry and oranges.</p>
+                </div>
+                <img src="images/SS_Cranberry.jpg" class="sauses" alt="Simons's Sauce Cranberry">
+            </div>
+
+            <div class="feature-left">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Tomato"</p>
+                    <p class="description">Sauce from fresh tomatoes and yellow bell pepper.
+                        It is used as a base for homemade pizza, pasta, and bruschetta with cheese.</p>
+                </div>
+                <img src="images/SS_Tomato.jpg" class="sauses" alt="Simons's Sauce Tomato">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Basil"</p>
+                    <p class="description">This sauce is ideal for lasagna and pasta. Also, serves as an excellent dressing for vegetable salads and snacks.
+                        This sauce included fresh Basil and Extra Virgin Oil Olive.</p>
+                </div>
+                <img src="images/SS_Basil.jpg" class="sauses" alt="Simons's Sauce Basil">
+            </div>
+
+            <div class="feature-left">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Coriander with nuts"</p>
+                    <p class="description">A universal sauce based on fresh Coriander with walnuts.
+                        It is combined with any kind of meat and fish, side dishes, and vegetables, you can also use it as a separate snack.</p>
+                </div>
+                <img src="images/SS_Coriander.jpg" class="sauses" alt="Simons's Sauce Coriander with nuts">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Sun-dried tomatoes"</p>
+                    <p class="description">Universal sauce based on dried tomatoes and black olives with the addition of fresh basil. 
+                        Combines with all kinds of snacks, side dishes, and vegetables.</p>
+                </div>
+                <img src="images/SS_Sun-dried tomatoes.jpg" class="sauses" alt="Simons's Sauce Sun-dried tomatoes">
+            </div>
+
+            <div class="feature-left">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Vinaigrette"</p>
+                    <p class="description">The basis of this sauce is fresh tarragon and balsamic vinegar.
+                        This is an ideal dressing for vegetables and salads.</p>
+                </div>
+                <img src="images/SS_Vinaigrette.jpg" class="sauses" alt="Simons's Sauce Vinaigrette">
+            </div>
+
+            <div class="feature">
+                <div class="content">
+                    <p class="title">Simon’s Sauce "Mint"</p>
+                    <p class="description">The basis of this sauce is fresh mint and fresh parsley. 
+                        Mint sauce will suit the dishes of mutton, white fish, and seafood.</p>
+                </div>
+                <img src="images/SS_Mint.jpg" class="sauses" alt="Simons's Sauce Mint">
+            </div>
+        </section>
+
+        <section class="contact">
+            <div class="container-down">
+                <h3>Contact Us</h3>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    <input type="submit" class="send-message-cta" value="Send">
+                </form>
+            </div>
+        </section>
+        
+
+        <script>
+            const menu = document.querySelector('.mobile-menu')
+            const close = document.querySelector('.mobile-menu-exit')
+            const nav = document.querySelector('nav')
+
+            menu.addEventListener('click',() => {
+                nav.classList.add('open-nav')
+            })
+
+            close.addEventListener('click',() => {
+                nav.classList.remove('open-nav')
+            })
+        </script>
+
+    </body>
+</html>
